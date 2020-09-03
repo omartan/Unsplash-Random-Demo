@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     func getImage() {
         if let url = URL.with(string: "photos/random") {
             var urlRequest = URLRequest(url: url)
-            urlRequest.setValue("Client-ID fkKHIJcWshuaMTzRniaOVOOGdYumCX7HJbLa7x2t2Bk", forHTTPHeaderField: "Authorization")
+            urlRequest.setValue("Client-ID REPLACE-WITH-ACCESS-KEY", forHTTPHeaderField: "Authorization")
             
             URLSession.shared.dataTask(with: urlRequest) { data, response, error in
                 if let data = data {
