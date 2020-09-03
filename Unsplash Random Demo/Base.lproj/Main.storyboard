@@ -41,6 +41,9 @@
                                         <state key="normal" image="arrow.clockwise" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="default" weight="bold"/>
                                         </state>
+                                        <connections>
+                                            <action selector="getPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZf-B6-d1f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -48,6 +51,7 @@
                                     <constraint firstAttribute="trailing" secondItem="hd0-pk-VLf" secondAttribute="trailing" constant="20" id="GqF-b7-f9P"/>
                                     <constraint firstItem="VIa-lp-AAP" firstAttribute="centerX" secondItem="Xg5-SH-16B" secondAttribute="centerX" id="Tqp-sz-YET"/>
                                     <constraint firstItem="ma3-Bp-QQI" firstAttribute="top" secondItem="Xg5-SH-16B" secondAttribute="top" constant="20" id="gp6-hU-eVv"/>
+                                    <constraint firstItem="hd0-pk-VLf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ma3-Bp-QQI" secondAttribute="trailing" constant="8" symbolic="YES" id="hMa-uC-qZj"/>
                                     <constraint firstAttribute="bottom" secondItem="VIa-lp-AAP" secondAttribute="bottom" constant="20" id="lKH-Sq-vOe"/>
                                     <constraint firstAttribute="height" constant="150" id="q3D-Co-p5v"/>
                                     <constraint firstItem="ma3-Bp-QQI" firstAttribute="leading" secondItem="Xg5-SH-16B" secondAttribute="leading" constant="20" id="v26-1h-GrT"/>
@@ -69,6 +73,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="likesLabel" destination="hd0-pk-VLf" id="dQu-5O-IRN"/>
+                        <outlet property="photo" destination="PDs-UM-bem" id="gnD-36-mV2"/>
+                        <outlet property="reloadButton" destination="VIa-lp-AAP" id="iaM-Gg-mmq"/>
+                        <outlet property="userLabel" destination="ma3-Bp-QQI" id="jwb-cY-xAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
