@@ -49,55 +49,9 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func getPhoto(_ sender: UIButton) {
         getImage()
     }
     
 }
 
-// MARK: Structs
-struct Image:Decodable {
-    let id:String
-    let likes:Int
-    let user:User
-    let urls:URLs
-}
-
-struct User:Decodable {
-    let name:String
-}
-
-struct URLs:Decodable {
-    let raw:String
-    let full:String
-    let regular:String
-    let small:String
-    let thumb:String
-}
-
-// MARK: Extensions
-extension URL {
-    private static var baseURL:String {
-        return "https://api.unsplash.com/"
-        
-    }
-    
-    static func with(string: String) -> URL? {
-        return URL(string: "\(baseURL)\(string)")
-    }
-}
-
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
-        }
-    }
-}
