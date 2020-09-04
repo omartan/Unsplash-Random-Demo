@@ -32,6 +32,6 @@ Stands for Model-View-ViewModel. Is an evolution from MVC, but don't make the mi
 
 In an MVVM Design Pattern, the ViewController that is found in every iOS project is placed under the View component (unlike in MVC, where it's placed in the Controller component).
 
-This allows the ViewController to be more focused to only contain view related logic and any other logic is is moved to the ViewModel.
+This allows the ViewController to be more focused to only contain view related logic and any other logic is moved to the ViewModel.
 
 The main benefit of the ViewModel is it allows to do easier tests, however to "link" the ViewModel to the View, you'll need to learn binding that has a few ways of doing it based on the project needs and complexity.
