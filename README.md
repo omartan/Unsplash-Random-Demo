@@ -10,6 +10,12 @@ A simple single page application to learn the concepts of design patterns like M
 
 2. Open `ViewController.swift` and replace the word **REPLACE-WITH-ACCESS-KEY** at `urlRequest.setValue("Client-ID REPLACE-WITH-ACCESS-KEY", forHTTPHeaderField: "Authorization")` with the access key provided by your developer account at Unsplash.
 
+# Why design pattern?
+
+![No Design Pattern vs Design Pattern](https://res.cloudinary.com/omar2017/image/upload/v1599187068/Screenshot_2020-09-04_at_10.18.18_exyjgz.png)
+
+Observe the image above, on the left is without design pattern and on the right is with design pattern. As you can see, the one without design pattern has fewer files (1) and the code shown now (2) has about 100 lines of code and is much longer in comparison to the one with design pattern. Now, try to imagine quantifying the lines of code by 10x and you'll see how unmanageable the single file will be. So logically, you'll need to split the file up, but how do you split it up? How do you structure it? This is where **design pattern** comes in.
+
 # What is design pattern?
 
 Design pattern is essentially structuring code in a way that is universally understandable by programmers as this allows people to work collaboratively better and to solve a commonly occuring problem in the context of software design.
