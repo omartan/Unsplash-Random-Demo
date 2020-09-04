@@ -18,7 +18,7 @@ Observe the image above, on the left is without design pattern and on the right 
 
 # What is design pattern?
 
-Design pattern is essentially structuring code in a way that is universally understandable by programmers as this allows people to work collaboratively better and to solve a commonly occuring problem in the context of software design.
+Design pattern is essentially structuring code in a way that is universally understandable by programmers as this allows people to work collaboratively better and to solve a commonly occurring problem in the context of software design.
 
 # What is MVC?
 
@@ -30,7 +30,7 @@ Stands for Model-View-Controller is one of the most design pattern when it comes
 
 # What is MVVM?
 
-Stands for Model-View-ViewModel. Is an evolution from MVC, but don't make the mistake thinking the C is replaced with the VM as it's a bit more then that.
+Stands for Model-View-ViewModel. Is an evolution from MVC, but don't make the mistake thinking the C is replaced with the VM as it's a bit more than that.
 
 ![MVVM Image](https://koenig-media.raywenderlich.com/uploads/2019/12/MVVM-Diagram.png)
 
